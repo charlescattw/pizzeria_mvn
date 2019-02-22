@@ -6,6 +6,11 @@
 	<artifactId>pizzeia_mvn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	
+	<properties>
+	<java-version-perso>1.8</java-version-perso>
+	<servlet-api-version>4.0.1</servlet-api-version>
+	</properties>
 
 	<name>MavenProduits</name>
 	<description> Ceci est une application de recherche </description>
@@ -48,6 +53,8 @@
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
+			<!-- ajout d'un scope "compile" voir onglet dependency hierarchy il est déjà dans la librairie. -->
+			<scope> compile </scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
@@ -55,6 +62,7 @@
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.4.0</version>
+			<scope> compile </scope>
 		</dependency>
 
 
